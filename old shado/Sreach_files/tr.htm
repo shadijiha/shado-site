@@ -1,0 +1,91 @@
+
+<!-- saved from url=(0099)http://sc.sweetim.com/apps/bi/tr.html#http://sc.sweetim.com/apps/bi/px/d.gif?comp=2000&act=1&dist=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript">
+		var SIM = {};
+		function handleTrack(srcURL) {
+			var trackCntx = { url: srcURL };
+			setTimeout(SIM.$.proxy(reportPixel, trackCntx), 50);
+		}
+
+		function reportPixel() {
+			var hashPart = this.url.slice(1);
+			if(hashPart.indexOf("gaq:") === 0) {
+				reportGAEvent(hashPart);
+			}
+			else {
+				SIM.$ && SIM.$.get(hashPart);
+				reportGA(hashPart);
+			}
+		}
+
+		function reportGAEvent(url) {
+			try {
+				var parts = url.split(":");
+				_gaq.push(['_setCustomVar', 1, 'distID', parts[1], 2], ['_trackEvent', "" + parts[2], "" + parts[3], "" + parts[4]]);
+			}
+			catch(ex) { }
+		}
+
+		function reportGA(url) {
+			try {
+				if (url) {
+					var data = url.slice(url.indexOf("?") + 1);
+					var parts = data.split("&"), pair;
+					var resParts = new Array();
+					data = "";
+					for (var i = 0, c = parts.length; i < c; i++) {
+						pair = parts[i].split("=");
+						if (pair.length >= 2) {
+							switch (pair[0]) {
+								case "comp":
+									resParts[1] = pair[1];
+									break;
+								case "act":
+									resParts[2] = pair[1];
+									break;
+								case "dist":
+									resParts[0] = pair[1];
+							}
+						}
+					}
+					for(var i = 0, c = resParts.length; i < c; i++) {
+						data += "/" + resParts[i];
+					}
+					//gaq
+					_gaq.push(['_setCustomVar', 1, 'distID', resParts[0], 2], ['_trackPageview', data]);
+				}
+			}
+			catch (ex) { }
+		}
+	</script>
+	<script src="jquery-1.7.1-sim.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+	SIM.$ && SIM.$(document).ready(function () {
+		window.onresize = function (event) {
+			handleTrack(window.location.hash);
+		};
+		handleTrack(window.location.hash);
+	});
+</script>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-110908-17']);
+	_gaq.push(['_setDomainName', 'sc.sweetim.com']);
+	_gaq.push(['_setSessionCookieTimeout', 86400000]);	
+
+	(function () {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,255 @@
+<html>
+	<head>
+<link rel="stylesheet" type="text/css" href="../CSS Scripts/constitution.css">
+		<title>Shado help center | video problems</title>
+<script src="../../../Main_Scripts/shado_JS_framework.js"></script>
+<link rel="icon" type="image/ico" href="../Shado.ico">
+
+<style type="text/css">
+.search	{margin-top: -10%;
+	 margin-left: +8%;}
+.google-input_white-shado_button	{background-color: #ffffff;
+				 color: black;
+				 border-radius: 0px;
+				 border-width: 0px;
+				 padding: 5px;
+				 max-width: 100px;
+				 min-width: 50px;
+				 max-height: 50px;
+				 min-height: 35px;
+				 font-weight: bold;
+				 font-size: 14px;}
+.code	{
+	font-family: "Lucida Console";
+	background-color: lightgray;
+	padding: 15px;
+	border: solid darkgray 1px;
+	border-radius: 5px;
+	width: 50%;
+	font-size: small;
+}
+.code div	{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+</style>
+	<head>
+	<body class="arial">
+		<div class="" style="margin-left: -5%; margin-top: -2%;">
+			<img src="images/shado-help_image.jpg" width="100%" />
+		</div>
+		<div class="" style="margin-left: 15%;">
+			<div class="search">
+					<br />
+				<input type="text" size="100" placeholder="Type a question here..." style="height: 40px;" class="bold shado-green center" />
+				<a href="result.htm">
+					<input type="button" value="Go" class="google-input_white-shado_button">
+				</a>
+					<br />
+					<br />
+			</div>
+					<br />
+					<br />
+					<br />
+					<br />
+			<h1 class="arial">Shado framework <script>document.write(version);</script> :</h1>
+			<div style="width: 60%; text-align: justify;" class="arial">
+				<p>
+					This is a documentation of all shado_JS_framework.js functions up to this version's release date (<script>document.write(releaseDate);</script>)
+				</p>
+				<br />
+				<ol>
+					<li>
+						<h3>Getting the root of a number:</h3>
+						<br />
+						<span>This function allow you to get root of any power of any number. This function takes the number (num) and the power (power) as parameters. The power representes the root intensity
+						(square root, cubic root, ...).</span>
+						<br />
+						<br />
+						<div class="code">
+							function root(num, power)	{
+								<div>
+									return Math.pow(num, 1 / power);
+								</div>
+							}
+						</div>
+					</li>
+					<li>
+						<h3>Converting radians to degrees:</h3>
+						<br />
+						<span>This function allow you to get the degree value of any radian angle. This function takes the initial radian value of the angle (rad) as parameter.</span>
+						<br />
+						<br />
+						<div class="code">
+							function radianToDegrees(rad)	{
+								<div>
+									return (rad * 180) / Math.PI;
+								</div>
+							}
+						</div>
+					</li>
+					<li>
+						<h3>Writing something to an HTML element:</h3>
+						<br />
+						<span>This function alow you to write any text or html code to an html element. This function takes the HTML element id (elementId) and the things to write (argument) as parameters.</span>
+						<br />
+						<br />
+						<div class="code">
+							function write(elementId, argument)	{
+								<div>
+									document.getElementById(elementId).innerHTML = argument;
+								</div>
+							}
+						</div>
+					</li>
+					<li>
+						<h3>Putting a number to the power of another number</h3>
+						<br />
+						<span>This function alow you to put any number to the power of another number. This function takes the base number (base) and the power (exposant) as parameters.</span>
+						<br />
+						<br />
+						<div class="code">
+							function exp(base, exposant)	{
+								<div>
+									return Math.pow(base, exposant);
+								</div>
+							}
+						</div>
+					</li>
+					<li>
+						<h3>Getting the square of a number:</h3>
+						<br />
+						<span>This function alow you to get the square of a number. This function takes the base number (base) as parameter.</span>
+						<br />
+						<br />
+						<div class="code">
+							function square(base)	{
+								<div>
+									return Math.pow(base, 2);
+								</div>
+							}
+						</div>
+					</li>
+					<li>
+						<h3>Getting the sin, cos or tan of an angle:</h3>
+						<br />
+						<span>This function returns the sin, cos or tan of an angle. This function takes the angle value (ang) as parameter. <small>(Note: if you want to use degrees you must include the following statment
+						 in your code : <b>angles = "degrees"</b>)</small></span>
+						<br />
+						<br />
+						<div class="code">
+							function sin(ang)	{ // You can replace sin by cos or tan
+								<div>
+									if (angles == "degrees")	{ <br />
+									&nbsp; &nbsp; &nbsp; ang = (ang * Math.PI) / 180; <br />
+									} else	{ <br />
+									&nbsp; &nbsp; &nbsp;angles = "radians"; <br />
+									}; <br />
+									<br />
+									return Math.sin(ang); // This can varry
+								</div>
+							}
+						</div>
+					</li>
+			</div>
+		</div>
+		<div class="footer_help arial">
+			<p style="font-size: 0.4in;" class="bold shado-yellow">
+				Shado
+			</p>
+			<div class="social_media_help">
+				<p>
+					<a href="https://www.facebook.com/shado999" target="_blank">
+						<img src="images/facebook.png" id="personal_image" />
+					</a>
+					<a href="https://www.youtube.com/channel/UCbN4W76n0Civqwfnbm1A2jg" target="_blank">
+						<img src="images/youtube.png" id="personal_image" />
+					</a>
+					<a href="https://www.twitter.com/shadi.jiha" target="_blank">
+						<img src="images/twitter.png" id="personal_image" />
+					</a>
+					<a href="https://www.instagram.com/shadi.jiha" target="_blank">
+						<img src="images/instagram.png" id="personal_image" />
+					</a>
+				</p>
+			</div>
+			<hr width="60%;" align="left" />
+			<br />
+			<div class="support">
+				All articles
+				<table style="font-size: 12px;">
+					<tr>
+						<td>
+							<a href="cloud_help.htm" class="white">Shado cloud services</a>
+						</td>
+						<td>
+							<a href="messenger.htm" class="white">Shado Messenger</a>
+						</td>
+						<td>
+							<a href="@shado_os.htm" class="gray" title="Not available yet">Shado Os</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="video.htm" class="white">Video problems</a>
+						</td>
+						<td>
+							<a href="convert_video.htm" class="white">Convert a video</a>
+						</td>
+						<td>
+							<a href="Taskbar_problem.htm" class="white">Taskbar problem?</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="pro.htm" class="white">Shado versions</a>
+						</td>
+						<td>
+							<a href="ultimate_guide_space.htm" class="white">Upgrade SUm space capacity</a>
+						</td>
+						<td>
+							<a href="account_recovery.htm" class="white">Password problem?</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="abbreviation_dictionary.htm" class="white">Shado abbreviation dictionary</a>
+						</td>
+						<td>
+							<a href="consequences.htm" class="white">Stealing my account?</a>
+						</td>
+						<td>
+							<a href="update_history.htm" class="white">Shado updates history</a>
+						</td>
+					</tr>
+				</table>
+				<hr width="60%;" align="left" />
+				<br />
+				<div style="text-align: center;">
+					<small>
+						<a href="../index.html" class="white">Home</a>
+						<span>|</span>
+						<a href="../../Shado Tube/index.htm" class="white">Shado Tube</a>
+						<span>|</span>
+						<a href="../e-mail.html" class="white">E-mail</a>
+						<span>|</span>
+						<a href="../about.html" class="white">About</a>
+						<span>|</span>
+						<a href="mailto:shadijiha@gmail.com" class="white">Contact us</a>
+						<span>|</span>
+						<a href="support.htm" class="white">Support</a>
+					</small>
+				</div>
+				<br />
+				<div>
+					<center>
+						<small class="white">
+							&copy; Shadi Jiha 20/07/2016 7:49:20 PM | all rights reserved 
+						</small>
+					</center>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

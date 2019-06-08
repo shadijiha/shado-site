@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-6" />
+<title>Welcome To Shadi's Web Pages</title>
+<link rel="stylesheet" href="file:///C|/Users/BCC/Documents/Yussuf Jiha/emx_nav_left.css" type="text/css" />
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = allitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+</head>
+<body onmousemove="closesubnav(event);">
+<font face="times new romant">
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="#pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<div id="masthead">
+  <h1 id="siteName">SHADI JIHA </h1>
+  <div id="utility"> <a href="#">Shado</a> | <a href="#">Friends</a> | <a href="#">Yussufjiha</a> | <a href="#">Arnoba</a></div>
+  <div id="globalNav"> <img alt="" src="file:///C|/Users/BCC/Documents/Yussuf Jiha/gblnav_left.gif" height="32" width="4" id="gnl" /> <img alt="" src="file:///C|/Users/BCC/Documents/Yussuf Jiha/glbnav_right.gif" height="32" width="4" id="gnr" />
+	<div id="globalLink"> <a href="#" target="WW" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">My</a><a href="#" id="gl2" class="glink" onmouseover="ehandler(event,menuitem2);">Web pages </a><a href="#" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Games</a><a href="#" id="gl4" class="glink" onmouseover="ehandler(event,menuitem4);">Sites</a><a href="#" id="gl5" class="glink" onmouseover="ehandler(event,menuitem5);">Magazines</a><a href="#" id="gl6" class="glink" onmouseover="ehandler(event,menuitem6);">global link</a><a href="#" id="gl7" class="glink" onmouseover="ehandler(event,menuitem7);">global link</a> </div>
+    <!--end globalLinks-->
+    <form id="search" action="">
+      <input name="searchFor" type="text" size="10" />
+      <a href="">search</a>
+    </form>
+  </div>
+  <!-- end globalNav -->
+  <div id="subglobal1" class="subglobalNav"> <a href="Shadi.html">Personal Page</a> | <a href="EMPP.html">Edit the options of the personal page</a>   </div>
+  <div id="subglobal2" class="subglobalNav"> <a href="Sport.html">Sport Page</a> | <a href="Exploration.html">Exploration</a> | <a href="Flowes.html">Flowers</a> | <a href="home page.html">Search about Friends</a>  </div>
+  <div id="subglobal3" class="subglobalNav"> <a href="http://www.chesstoon.com" target="_blank">Play Chess</a> | <a href="http://games.maktoob.com" target="_blank">Play Yahoo games</a> | <a href="http://www.m7shsh.com/daily-game/" target="_blank">Play Other games</a>  </div>
+  <div id="subglobal4" class="subglobalNav"> <a href="http://www.download.com/windows" target="_blank">Doenload programs</a> | <a href="news.html">Mobils and news</a> | <a href="http://iclone.reallusion.com/?gclid=CIzbttrLqLACFUdlfAodC3hWWQ" target="_blank">Iclone Tutorial</a> | <a href="http://www.carnation.co.uk/polly/cheesecake.aspx" target="_blank">Learn To Cook Food</a>  </div>
+  <div id="subglobal5" class="subglobalNav"> <a href="Sarah and Yussuf Magazine.html">Sarah & Yussuf</a> | <a href="http://www.majed.ae" target="_blank">Majed</a> | <a href="http://www.faresmagazine.com" target="_blank">Fares</a>  </div>
+  <div id="subglobal6" class="subglobalNav"> <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> </div>
+  <div id="subglobal7" class="subglobalNav"> <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> </div>
+  <div id="subglobal8" class="subglobalNav"> <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> </div>
+</div>
+<!-- end masthead -->
+<div id="pagecell1">
+  <!--pagecell1-->
+  <img alt="" src="file:///C|/Users/BCC/Documents/Yussuf Jiha/tl_curve_white.gif" height="6" width="6" id="tl" /> <img alt="" src="file:///C|/Users/BCC/Documents/Yussuf Jiha/tr_curve_white.gif" height="6" width="6" id="tr" />
+  <div id="breadCrumb"> <a href="home page.html">Sign out </a> / <a href="#">Breadcrumb</a> / <a href="#">Breadcrumb</a> / </div>
+  <div id="pageName">
+    <h2>Shadijiha.AK.com  </h2>
+    <img alt="small logo" src="298.jpg" height="80" width="66" title="Shadi Jiha" /></div>
+  <div id="pageNav">
+    <div id="sectionLinks"> <a href="http://www.facebook.com/" target="_blank">Shadi's company page in facebook </a> <a href="http://www.yahoo.com" target="_blank">Yahoo</a> <a href="http://games.maktoob.com" target="_blank">Play Yahoo Games </a> <a href="http://www.msn.com" target="_blank">Windows live</a> <a href="http://www.google.com" target="_blank">Search some things </a> <a href="#">Go to Shado </a> </div>
+    <div class="relatedLinks">
+      <h3>Friends pages </h3>
+      <a href="shadi.html">Shadi Jiha </a> <a href="sarah.html">Sarah Jiha </a> <a href="Mum &amp; dad.html">Samer Jiha  </a><a href="#">Grand parants </a> <a href="#">Ahmad and his family </a> <a href="#">Yussuf Jiha </a> </div>
+    <div class="relatedLinks">
+      <h3>Related Link Category</h3>
+      <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> </div>
+    <div id="advert"> <img src="" alt="" width="107" height="66" /> Advertisement copy goes here. Advertisement copy goes here. </div>
+  </div>
+  <div id="content">
+    <form action="mailto:shadijiha@yahoo.com">
+      <fieldset>
+        <h2>Information</h2>
+        </legend>
+        <br />
+        first name
+  <input name="text" type="text" />
+  &nbsp;<font color="#999999">IMPORTANT</font> <br />
+        Last name
+  <input name="text" type="text" />
+  &nbsp;<font color="#999999">IMPORTANT</font><br />
+        your E-mail adress
+  <input name="text" type="text" />
+  &nbsp;<font color="#999999">IMPORTANT</font> <br />
+        write it again
+  <input name="text" type="text" />
+  &nbsp;<font color="#999999">IMPORTANT</font><br />
+        please choose your birthday day-month-year &nbsp;<font color="#999999">OPTIONAL</font><br />
+  <select name="Choose">
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+  <select name="Choose">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="Septemper">Septemper</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+  </select>
+  <select name="Choose">
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2002">2002</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+    <option value="1999">1999</option>
+    <option value="1998">1998</option>
+    <option value="1997">1997</option>
+    <option value="1996">1996</option>
+    <option value="1995">1995</option>
+    <option value="1994">1994</option>
+    <option value="1993">1993</option>
+    <option value="1992">1992</option>
+    <option value="1991">1991</option>
+    <option value="1990">1990</option>
+    <option value="1989">1989</option>
+    <option value="1988">1988</option>
+    <option value="1987">1987</option>
+    <option value="1986">1986</option>
+    <option value="1985">1985</option>
+    <option value="1984">1984</option>
+    <option value="1983">1983</option>
+    <option value="1982">1982</option>
+    <option value="1981">1981</option>
+    <option value="1980">1980</option>
+    <option value="1979">1979</option>
+    <option value="1978">1978</option>
+    <option value="1977">1977</option>
+    <option value="1976">1976</option>
+    <option value="1975">1975</option>
+    <option value="1974">1974</option>
+    <option value="1973">1973</option>
+    <option value="1972">1972</option>
+    <option value="1971">1971</option>
+    <option value="1970">1970</option>
+    <option value="other">other</option>
+  </select>
+  <br />
+        father's name
+  <input name="text" type="text" />
+  &nbsp;<font color="#999999">OPTIONAL</font><br />
+        write a password you use it
+  <input name="password" type="password" />
+  <br />
+        write how would you like to write your e-mail adress:
+  <input name="text" type="text" />
+        @
+  <select name="e-mail">
+    <option value="shado.com">shado.com</option>
+    <option value="smail.com">smail.com</option>
+    <option value="sfriends.com">sfriends.com</option>
+  </select>
+  <font color="#999999">IMPORTANT</font><br />
+        write a Username to Use it
+  <input type="text"  value="Shado.KS.com" name="User name  /&gt;&lt;font color="##999999>
+        IMPORTANT</font> <br />
+        what is your favourite color? &nbsp;<font color="#999999">OPTIONAL</font> <br />
+  <select name="Color">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="yellow">yellow</option>
+    <option value="green">green</option>
+    <option value="pink">pink</option>
+    <option value="purple">purple</option>
+    <option value="orange">orange</option>
+    <option value="other">other</option>
+  </select name="Color">
+  <br />
+        Please select a Question: &nbsp; <font color="#999999">IMPORTANT</font>
+  <select name="select Question">
+    <option value="What is your best friend?">What is your best friend?</option>
+    <option value="What is your Favourite food?">What is your Favourite food?</option>
+    <option value="What is your Favourite color?">What is your Favourite color?</option>
+    <option value="What is your color of your Car?">What is your color of your Car?</option>
+  </select>
+        Please write the answer of the Qwestion
+  <input type="text" size="15" name="answer" />
+  &nbsp; <font color="#999999">IMPORTANT</font> <br />
+        you are a:
+  <select name="gender">
+    &nbsp; <font color="#999999">IMPORTANT</font><br />
+    <option value="-Select One-">-Select One-</option>
+    <option value="man">man</option>
+    <option value="woman">woman</option>
+  </select>
+  <br />
+        Please choose your parsonal photo &nbsp;
+  <input type="file" name="photoUpload" size="40" />
+  <br />
+      </fieldset>
+      <br />
+      <fieldset>
+      <legend>
+        <h2>Choose</h2>
+        </legend>
+      <p>How would you like to use your Account? &nbsp; <font color="#999999">IMPORTANT</font><br />
+          <input name="checkbox" type="checkbox"  value="to write E-mails" />
+        to write E-mails <br />
+          <input name="checkbox" type="checkbox" value="to write pareagraphs" />
+        to write paregraphs <br />
+          <input name="checkbox" type="checkbox" value="to see the pareagraphs" />
+        to see the paregraphs <br />
+          <input name="checkbox" type="checkbox" value="to see the pareagraphs" />
+        to to search about friends <br />
+          <br />
+        How would you like to communicat with you? &nbsp; <font color="#999999">IMPORTANT</font><br />
+        <input type="radio"  name="ContactMe" value="Phone " />
+        phone <br />
+        <input type="radio" name="ContactMe"  value="E-mail" />
+        E-mail <br />
+        <input type="radio" name="ContactMe"  value="Fax" />
+        fax <br />
+        <input type="radio" name="ContactMe"  value="Don't communicat with me" />
+        Don't communicat with me </p>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+      <legend>
+        <h2>Write for us</h2>
+        </legend>
+        write an e-mail to send it to shado.KS.com &nbsp; <font color="#999999">OPTIONAL</font><br />
+  <textarea name="Comments" cols="30" rows="5"></textarea>
+  <br />
+  <input type="submit" name="submit" value="Send my e-mail" />
+      </fieldset>
+      <br />
+      <a href="page.html">
+        <input type="submit" name="submit" value="save the chenges" />
+      </a>
+      <input type="reset" name="reset" imges="button 1.jpg" alt="To clear all text did you write it" title="To clear all text did you write it" />
+    </form>
+    </font> <br />
+    <div class="story"><p>&nbsp;</p>
+    </div>
+    <div class="story">
+      <table width="100%" cellpadding="0" cellspacing="0" summary="">
+        <tr valign="top">
+          <td width="49%" class="storyLeft">
+          <p> <a href="#" class="capsule"></p>          </td>
+          <td width="51%">
+          <p> <a href="#" class="capsule"></a></p>          </td>
+        </tr>
+        <tr valign="top">
+          <td class="storyLeft">
+            <p> <a href="#" class="capsule"></a></p>
+            <p>&nbsp;</p></td>
+          <td>
+            <p> <a href="#" class="capsule"></a></p>          </td>
+        </tr>
+        <tr valign="top">
+          <td class="storyLeft">
+            <p> <a href="#" class="capsule"></a></p>
+            <p>&nbsp;</p></td>
+          <td>
+            <p> <a href="#" class="capsule"></a>. </p>          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="siteInfo"> <img src="" width="44" height="22" /> <a href="ASJC.html">About Shadi Jiha company </a> | <a href="SM.html">Site Map</a> | <a href="Shadi1.html">What's the difference </a> | <a href="help.html" target="_blank">Help</a> |<a href="CU.html"> Contact Us</a> | &copy;2012 Shadi Jiha Company for HTML web pages Maysoon Kartomah helped this Company </div>
+</div>
+<!--end pagecell1-->
+<br />
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script>
+</font>
+</body>
+</html>
+	
